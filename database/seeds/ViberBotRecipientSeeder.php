@@ -5,6 +5,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Faker\Generator as Faker;
 use App\ViberBotRecipient as Sender;
+use Carbon\Factory;
 
 class ViberBotRecipientSeeder extends Seeder
 {
@@ -17,6 +18,6 @@ class ViberBotRecipientSeeder extends Seeder
     {
         //id, viber_key, name, avatar, created_at, updated_at
         // пример вайбер юзер ид или кей yI8UmH+jb9ZAzyYtU/mYwg==
-
+        factory(Sender::class,300)->create();
     }
 }

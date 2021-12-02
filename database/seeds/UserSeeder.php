@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\ViberBotMessage;
-class ViberBotMessageSeeder extends Seeder
+use App\User;
+
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +13,6 @@ class ViberBotMessageSeeder extends Seeder
     public function run()
     {
         //
-        factory(ViberBotMessage::class,500)->create();
+        factory(App\User::class, 50)->create();
     }
 }
