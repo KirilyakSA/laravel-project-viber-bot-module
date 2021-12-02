@@ -10,4 +10,9 @@ class ViberUserBot extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function messages()
+    {
+        return $this->hasMany(ViberBotMessage::class,'bot_id','id');
+    }
 }

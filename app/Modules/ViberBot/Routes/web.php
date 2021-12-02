@@ -1,5 +1,6 @@
 <?php
 
+use App\ViberUserBot;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'viber-bot'], function () {
     Route::get('/', function () {
-        dd('This is the Viberbot module index page. Build something great!');
+     dd(ViberUserBot::find(rand(1,60))->messages);
     });
 });

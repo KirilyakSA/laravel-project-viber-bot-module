@@ -13,7 +13,7 @@ $factory->define(ViberUserBot::class, function (Faker $faker) {
         // отношения:
         // viber_user_bots.user_id = users.id | cascade
             'user_id' => rand(1,50),
-            'bot_name' => $faker->title,
+            'bot_name' => $faker->userName,
             'bot_key' => Str::random(16).'-'.Str::random(16).'-'.Str::random(16),
     ];
 });

@@ -17,7 +17,7 @@ $factory->define(ViberBotMessage::class, function (Faker $faker) {
         // viber_bot_messages.message_type = viber_bot_message_message_types.id | null
         // viber_bot_messages. status = viber_bot_message_statuses.id | null
         // В этой модели необходимо описать все отношения и методы для получения библиотечных данных для viber_bot_message_message_types и viber_bot_message_statuses
-
+        // TODO НЕобходимо пересмотреть пля messages,media. Я думаю в ТЗ ошибка.
             'bot_id' => rand(1,60),
             'message_id' => Str::random(19),// "message_token": 4912661846655238145,
             'recipient' => function() {return App\ViberBotRecipient::find(rand(1,300))->viber_key;},
