@@ -1,0 +1,6 @@
+{
+    "name": "Viberbot",
+    "slug": "viber-bot",
+    "version": "1.0",
+    "description": "модуль для отправки/получения viber сообщений"
+}
